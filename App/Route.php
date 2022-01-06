@@ -6,22 +6,23 @@ use MF\Init\Bootstrap;
 
 class Route extends Bootstrap {
 
-    protected function initRoutes() {
+	protected function initRoutes() {
 
-        $routes['home'] = array(
-            'route' => '/',
-            'controller' => 'indexController',
-            'action' => 'index'
-        );
+		$routes['home'] = array(
+			'route' => '/',
+			'controller' => 'indexController',
+			'action' => 'index'
+		);
 
-        $routes['sobre_nos'] = array(
-            'route' => '/sobre_nos',
-            'controller' => 'indexController',
-            'action' => 'sobreNos'
-        );
+		$routes['sobre_nos'] = array(
+			'route' => '/sobre_nos',
+			'controller' => 'indexController',
+			'action' => 'sobreNos'
+		);
 
-        $this->setRoutes($routes);
-    }
+		$this->setRoutes($routes);
+	}
+
 }
 
 ?>
